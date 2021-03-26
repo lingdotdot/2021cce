@@ -38,3 +38,11 @@ int main()
     }
 }
 ```
+#4
+```C
+#include <stdio.h>
+int main()
+{
+    printf("請看看值是多少: %d", '\0');
+}
+```
