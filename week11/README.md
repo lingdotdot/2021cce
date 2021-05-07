@@ -1,4 +1,4 @@
-# 01
+# 01 練習qsort程式。
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +20,7 @@ int main()
     }
 }
 ```
-# 02
+# 02 10420 CPE練習，考試題目練習。
 ```C
 #include <stdio.h>
 #include <stdlib.h>
