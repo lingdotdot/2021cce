@@ -96,3 +96,43 @@ int main()
     printf("%c %d\n", box.c,box.ans);
 }
 ```
+# 05 CPE 10062 step 1
+```C
+#include <stdio.h>
+char line[2000];
+int ans[256];
+int main()
+{
+	for(int t=0; gets (line); t++){
+	if(t>0)printf("\n");
+	printf("blah\n");
+	printf("blah\n");
+	
+
+
+}
+}
+```
+# 06 CPE 10062 step 2
+```C
+#include <stdio.h>
+char line[2000];
+int ans[256];
+int main()
+{
+
+    for(int t=0;gets(line);t++){
+        for(int i=0;i<256; i++) ans[i]=0;
+
+        for(int i=0; line[i]!=0; i++){
+            char c=line[i];
+            ans[c]++;
+        }
+
+        if(t>0) printf("\n");
+        for(int i=0;i<256;i++){
+            if(ans[i]>0)printf("%d %d\n", i,ans[i]);
+        }
+    }
+}
+```
