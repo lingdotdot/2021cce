@@ -38,3 +38,20 @@ void draw(){
    int s=second();// 變數秒數
    text("Now:"+ h+":"+m+":"+s,100,100);//顯示的字串，now函式
 }  
+# step 05 倒數計時的時鐘，是現在時間減掉目標時間
+，如果把時間都換成秒數程式會簡單很多。
+void setup(){
+   size(1024,400); 
+   textFont(createFont("標楷體",50)); //因為預設字體是英文字體，所以一定中文字秀不出來，所以這邊換字體。
+}
+void draw(){
+   background(15,162,249);
+   textSize(50);
+   int h=hour();
+   int m=minute();
+   int s=second();
+   fill(255,0,0); //這邊是換顯示字的顏色
+   text("Now:"+ h+":"+m+":"+s,100,100);
+   int total=h*60*60+m*60+s;//這邊是在先算出總秒數
+   text("總秒數:"+total, 100,200); //並設定字型大小，然後印出來。
+}  
