@@ -8,7 +8,7 @@ void setup(){
   text(ans,0,30);
 }
 ```
-# 02 第二步驟要按下滑鼠後產生一個亂數
+# 02 step02修改後,利用(int)random(60)將float轉成int, 利用mosuePressed()來改亂數,記得background()清背景
 ```C
 // Q1: 數字有小數點，不好!
 // Q2: 沒有互動 
