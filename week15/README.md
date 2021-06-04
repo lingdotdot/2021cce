@@ -30,3 +30,21 @@ void draw(){
 //原:0,1,2,3,4,5,6,7,8,9
 //到數:9,8,7,6,5,4,3,2,1,0
 ```
+# 03 step3
+```C
+//要發出聲音，有點難度，要用外掛
+//這裡叫PDE:Processing 
+import processing.sound.*;
+SoundFile player;//SoundFile是型狀，player是變數名
+//tada.mp3檔，可以拉進來這裡
+void setup(){
+  size(400,200);
+  player=new SoundFile(this , "tada.mp3");
+}
+void draw(){
+    background(51,114,191);  
+}
+void  mousePressed(){
+   player.play();
+}  
+```
