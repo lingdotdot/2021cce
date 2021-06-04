@@ -88,7 +88,8 @@ void  mousePressed(){//2種:play(),stop()
 }  
 ```
 # 06 Java & Javascript的差別 和 轉換
-Java```C 
+```C
+///Java
 void setup(){//設定，只做一次
  size(400,200); 
  textSize(40);//字型大小
