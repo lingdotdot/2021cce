@@ -16,9 +16,8 @@ int main()
 #2
 ```C
 #include <stdio.h>
-
 struct POINT{
-float x,y;};
+float x,y;}
 
 int main()
 {
