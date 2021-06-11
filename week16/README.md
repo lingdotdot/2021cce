@@ -10,7 +10,7 @@ void draw(){//畫，每秒60次
    //畫圓  圓心 寬 高
  }
 ```
-Step 02 利用Src涵式劃出圓
+Step 02 利用Arc涵式劃出圓
 ```C
 void setup(){
    size(400,200); 
