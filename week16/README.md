@@ -93,3 +93,25 @@ void draw(){
   text(v,200,150);//印出轉動的速度
 }
 ```
+Step 06 產生亂碼，轉盤任意亂碼並轉動
+```C
+  fill(255,0,0);
+  textSize(40);
+}
+float shift=0,v=0;//global變數
+void mousePressed(){
+  v=random(10)+5;
+}
+void draw(){
+  background(57,255,127);
+  float start=radians(90+shift);
+  float stop=radians(180+shift);
+  arc(100,100,180,180, start, stop);
+  if(v>0.1){//還有速度時，就轉動
+  shift+=v;//轉動的速度
+  v=v*0.99;//速度會慢慢減速
+  }
+  text(shift,200,100);//印出shift
+  text(v,200,150);//印出轉動的速度
+}
+```
