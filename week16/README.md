@@ -32,7 +32,7 @@ void setup(){
   fill(255,0,0);
   textSize(40);
 }
-int degree=0;
+int degree=0
 void draw(){
    background(57,255,127);
    float stop=radians(degree);
@@ -54,3 +54,20 @@ void draw(){
   arc(100,100,180,180, radians(90), radians(180));
 }
 ```
+Step 04 讓轉盤有角度的自動轉起來，每秒轉動60度
+```C 
+void setup(){
+  size(400,200);
+  fill(255,0,0);
+  textSize(40);
+}
+float shift=0;
+void draw(){
+  background(57,255,127);
+  //float start =radians(90+mouseX);
+  //float stop =radians(180+mouseX);
+  float start=radians(90+shift);
+  float stop=radians(180+shift);
+  arc(100,100,180,180, start, stop);
+  shift+=1;
+}
