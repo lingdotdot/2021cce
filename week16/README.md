@@ -10,3 +10,18 @@ void draw(){//畫，每秒60次
    //畫圓  圓心 寬 高
  }
 ```
+Step 02 利用Src涵式劃出圓
+```C
+void setup(){
+   size(400,200); 
+}
+void draw(){
+  background(57,255,127);
+  fill(255);  //白
+  ellipse(100,100,180,180);
+  fill(255,0,0);//紅
+  float stop=mouseX/50.0;
+  text(stop,200,100);
+  arc(100,100,180,180,0,stop);
+}
+```
