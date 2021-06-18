@@ -116,3 +116,34 @@ void keyPressed(){//點一次做程序一次，小心有時打到
    }
 }//Q:算分數!更多的題目!亂數跳題!
 ```
+#step03-2_利用陣列,來讓題目變更多。 String [] Q = {好多字串} 再配 int Qi=0 來挑選 Q[Qi] 的字來考試, 答對時 Qi++ 並加分, 小心,Qi太大會當掉哦
+```C
+void setup(){
+   size(400,200);
+   textSize(40);
+}
+String line="";
+String []Q={"hello", "world", "other"};
+int Qi=0;
+void draw(){
+  background(0);
+  text("Score: "+score,100,50);
+  text("Q:  "+Q[Qi], 100,100);
+  text("A:"+line, 100,150);
+}
+int score=0;
+void keyPressed(){//點一次做程序一次，小心有時打到
+//看不到的符號
+   int len =line.length();
+   if(key>='a'&& key<='z')line=line+key;//小寫鍵
+   if(key>='A'&& key<='Z')line=line+key;//大寫鍵
+   if(key== BACKSPACE && len>0) line=line.substring(0,len-1);
+   if(key == ENTER){//算分數
+     if(line.equals(Q[Qi])==true){
+        score++; 
+        Qi++;//換下一筆 Q[0] 變 Q[1]
+        line="";
+     }else score--;
+   }
+}//Q:算分數!(陣列)更多的題目!亂數跳題!
+```
