@@ -45,7 +45,7 @@ void keyPressed(){//點一次做程序一次
    line =line+key;//key是按下去按鍵，可以打字
 }
 ```
-#
+#step02-2_如果key==BACKSPACE時,就要用 line = line.substring(0, len-1)來讓字串變短一點點,而 int len=line.length()會得到字串的原本長度, 還有要判斷小寫字母、大寫字母
 ```C
 void setup(){
    size(400,200);
